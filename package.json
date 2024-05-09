@@ -18,6 +18,7 @@
   "dependencies": {
     "@excalidraw/markdown-to-text": "0.1.2",
     "@vercel/node": "^3.1.0",
+    "axios": "^1.6.8",
     "mermaid": "10.9.0",
     "nanoid": "4.0.2"
   },
@@ -25,6 +26,7 @@
     "@babel/core": "7.12.0",
     "@excalidraw/eslint-config": "1.0.3",
     "@excalidraw/excalidraw": "0.17.1-7381-cdf6d3e",
+    "@types/axios": "^0.14.0",
     "@types/mermaid": "9.2.0",
     "@types/react": "18.2.14",
     "@types/react-dom": "18.2.4",
@@ -41,7 +43,8 @@
     "react-dom": "18.2.0",
     "rimraf": "5.0.5",
     "sass": "1.74.1",
-    "typescript": "5.2.2",
+    "typescript": "^5.2.2",
+    "vercel": "^34.1.9",
     "vite": "5.2.8"
   },
   "resolutions": {
