@@ -15,16 +15,20 @@ export const MermaidDiagram = ({ definition, id }: MermaidProps) => {
     const render = async (id: string, definition: string) => {
       try {
         setError(null);
+        console.log("Rendering Mermaid diagram with definition:", definition);
 
         const { svg } = await mermaid.render(
           `mermaid-diagram-${id}`,
           definition
         );
+        console.log("Rendered SVG:", svg);
+
         startTransition(() => {
           setSvg(svg);
         });
       } catch (err) {
         setError(String(err));
+        console.error("Error rendering Mermaid diagram:", err);
       }
     };
 
