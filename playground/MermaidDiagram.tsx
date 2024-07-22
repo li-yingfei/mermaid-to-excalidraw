@@ -1,3 +1,4 @@
+// playground/MermaidDiagram.tsx
 import { useState, useTransition, useEffect } from "react";
 import mermaid from "mermaid";
 
@@ -27,7 +28,7 @@ export const MermaidDiagram = ({ definition, id }: MermaidProps) => {
           setSvg(svg);
         });
       } catch (err) {
-        setError(String(err));
+        // setError(String(err));
         console.error("Error rendering Mermaid diagram:", err);
       }
     };

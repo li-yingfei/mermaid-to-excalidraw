@@ -104,6 +104,8 @@
 
 // export default App;
 
+
+// playground/index.tsx
 import { useState, useCallback, useDeferredValue } from "react";
 import CustomTest from "./CustomTest.tsx";
 import ExcalidrawWrapper from "./ExcalidrawWrapper.tsx";
